@@ -1,124 +1,76 @@
 ---
-# Display name
-title: christian probando
-
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
-
-# Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
-
-# Status emoji
-status:
-  icon: ☕️
-
-# Is this the primary user of the site?
-superuser: true
-
-# Role/position/tagline
-role: Professor of Forest Biometrics
-
-# Organizations/Affiliations to show in About widget
-organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
-
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
-
-# Interests to show in About widget
-interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
-
-# Education to show in About widget
+bio: My research interests include biometrics, applied statistics, and forest ecology.
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
-
-# Skills
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-skills:
-  - name: Technical
-    items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: python
-        icon_pack: fab
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-line
-        icon_pack: fas
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: database
-        icon_pack: fas
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-hiking
-        icon_pack: fas
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-        icon_pack: fas
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera-retro
-        icon_pack: fas
-
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: '/#contact'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
-    display:
-      header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/gcushen
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/
-  # Link to a PDF of your resume/CV.
-  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
-  # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
-
-# Highlight the author in author lists? (true/false)
+  - course: PhD in Biometrics
+    institution: Yale University
+    year: 2011
+  - course: M.Phill in Biometrics
+    institution: Yale University
+    year: 2009    
+  - course: MSc in Statistics
+    institution: University of Idaho
+    year: 2006
+  - course: BSc in Forest Engineering
+    institution: Universidad de La Frontera
+    year: 2008
+email: "christian.salas@uchile.cl"
+first_name: Christian
 highlight_name: true
+interests:
+- Biometrics
+- Forest ecology
+- Statistics
+- System dynamics
+- Sampling
+last_name: Salas-Eljatib
+organizations:
+- name: Universidad de Chile
+  url: https://forestal.uchile.cl
+role: Professor of Forest Biometrics and Modelling
+social:
+- icon: envelope
+  icon_pack: fas
+  link: /#contact
+- display:
+    header: true
+  icon: twitter
+  icon_pack: fab
+  label: Follow me on Twitter
+  link: https://twitter.com/cseljatib
+- icon: graduation-cap
+  icon_pack: fas
+  link: https://scholar.google.fr/citations?user=xtfNt9IAAAAJ
+#- icon: github
+#  icon_pack: fab
+#  link: https://github.com/gcushen
+- icon: linkedin
+  icon_pack: fab
+  link: https://linkedin.com/in/christian-salas-eljatib-b43a4a140
+superuser: true
+# Display name
+title: Christian Salas-Eljatib
+# Full name (for SEO)
+# first_name: Christian
+# last_name: Salas-Eljatib
+
+## Highlight the author in author lists? (true/false)
+# highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-{style="text-align: justify;"}
+
+I am a Full Professor of Forest Biometrics and Modelling at the [Department of Forest Management and the Environment](https://forestal.uchile.cl/facultad/departamentos/gestion-forestal-y-su-medio-ambiente) of the [Faculty of Forest Science and Nature Conservation](https://forestal.uchile.cl) at the [Universidad de Chile](https://uchile.cl/), in Santiago, Chile. My research interests include biometrics, applied statistics and ecological modelling. I lead the [Laboratory of Forest Biometrics and Modelling](https://biometriaforestal.uchile.cl), where we develop mathematical and statistical models for forecasting forest ecosystem features, study tree allometry, and assessing sampling strategies.
+
+
+<!--- 
+*Please let me know of any typos in this website*, thanks in advance.
+
+Differential equations
+
+**`Web page under construction!`**, regardless, in the meantime you still can check my former [website here.](https://cseljatib.github.io)
++ [**Rbook**](/rlibro)
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
++ [**datana.pdf**](/rlibro/datana.pdf)
+
+-->
