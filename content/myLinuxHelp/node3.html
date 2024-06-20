@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Copying/deleting files, folders</TITLE>
+<META NAME="description" CONTENT="Copying/deleting files, folders">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html82"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html78"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html72"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html80"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html83"
+  HREF="node4.html">Searching, features of files,</A>
+<B> Up:</B> <A NAME="tex2html79"
+  HREF="node2.html">Miscellaneous management of files</A>
+<B> Previous:</B> <A NAME="tex2html73"
+  HREF="node2.html">Miscellaneous management of files</A>
+ &nbsp; <B>  <A NAME="tex2html81"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00021000000000000000">
+Copying/deleting files, folders</A>
+</H2>
+
+<OL>
+<LI><SPAN  CLASS="textbf">How to edit a file</SPAN>
+<BR>
+If you want to edit a file with the program
+<A NAME="tex2html6"
+  HREF="http://projects.gnome.org/gedit">Gedit</A>, do as follows at the terminal
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf gedit FILENAME.EXTENTION}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="352" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf gedit FILENAME.EXTENTION}
+}
+}">
+
+<P>
+Notice, that if FILENAME.EXTENTION&nbsp; does not exist, it will be created,
+otherwise will open that file.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to delete a folder/file</SPAN>
+<BR>
+A folder is deleted using 
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf rm -rf FOLDERNAME}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="263" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf rm -rf FOLDERNAME}
+}
+}">
+                        
+and a file is deleted with 
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf rm FILENAME.EXTENTION}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="331" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf rm FILENAME.EXTENTION}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Move (or Rename) Files and Directories</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf mv src-file dest-file}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="221" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf mv src-file dest-file}
+}
+}">
+&nbsp;&nbsp;    rename src-file to  dest-file
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf mv src-file dest-dir}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="221" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf mv src-file dest-dir}
+}
+}">
+&nbsp;&nbsp;     move a file into a directory
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf mv src-dir dest-dir}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="219" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf mv src-dir dest-dir}
+}
+}">
+&nbsp;&nbsp;      rename src-dir, or move to dest-dir
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf mv -i src dest}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="172" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf mv -i src dest}
+}
+}">
+&nbsp;&nbsp;           copy &amp; prompt before overwriting
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Copy Files</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf cp src-file dest-file}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="215" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf cp src-file dest-file}
+}
+}">
+&nbsp;&nbsp;    copy src-file to  dest-file
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf cp src-file dest-dir}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="214" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf cp src-file dest-dir}
+}
+}">
+&nbsp;&nbsp;     copy a file into a directory
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf cp -R src-dir dest-dir}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="243" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf cp -R src-dir dest-dir}
+}
+}">
+&nbsp;&nbsp;   copy one directory into another
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf cp -i src dest}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="165" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf cp -i src dest}
+}
+}">
+&nbsp;&nbsp;           copy &amp; prompt before overwriting
+
+<P>
+</LI>
+</OL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

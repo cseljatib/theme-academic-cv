@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Compressing/uncompressing files</TITLE>
+<META NAME="description" CONTENT="Compressing/uncompressing files">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html116"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html112"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html108"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html114"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html117"
+  HREF="node7.html">How to install/uninstall a</A>
+<B> Up:</B> <A NAME="tex2html113"
+  HREF="node2.html">Miscellaneous management of files</A>
+<B> Previous:</B> <A NAME="tex2html109"
+  HREF="node5.html">Features of the computer</A>
+ &nbsp; <B>  <A NAME="tex2html115"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00024000000000000000">
+Compressing/uncompressing files</A>
+</H2>
+
+<OL>
+<LI><SPAN  CLASS="textbf">Extracting a tar.bz2 file</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf tar jxvf FILENAME.tar.bz2}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="309" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf tar jxvf FILENAME.tar.bz2}
+}
+}">
+
+<P>
+This will show you what extracts,
+ and in most cases will be in a sub directory of <TT>FILENAME</TT>.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Extracting a tar.gz file</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf tar zxvf FILENAME.tar.gz}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="301" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf tar zxvf FILENAME.tar.gz}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Creating a tar.bz2 file</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf tar jcvf FILENAME.tar.bz2 dir1 dir2 ...}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="433" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img36.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf tar jcvf FILENAME.tar.bz2 dir1 dir2 ...}
+}
+}">
+
+<P>
+<TT>FILENAME.tar.bz2</TT> is the name of the tar file we wish to create. 
+<TT>dir1</TT> and <TT>dir2</TT> are the names of the directories 
+and/or files we wish to include in the <TT>tar.bz2</TT> archive.
+
+<P>
+To use gzip compression instead of bz2, simply put zcvf in place of jcvf in the command line
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Extracting a .rar file</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf unrar x FILENAME.rar}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="271" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img37.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf unrar x FILENAME.rar}
+}
+}">
+
+<P>
+you may need to install <TT>unrar</TT> first  using
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~unrar}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="284" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img38.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;unrar}
+}
+}">
+                         
+<BR>
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Extracting a .zip file</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf unzip FILENAME.zip}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="252" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf unzip FILENAME.zip}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Creating a .zip file</SPAN>
+<BR>
+To create a zip file containing dir1, dir2, ...:
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf  zip FILENAME.zip dir1 dir1 ...}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="354" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf zip FILENAME.zip dir1 dir1 ...}
+}
+}">
+
+<P>
+</LI>
+</OL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

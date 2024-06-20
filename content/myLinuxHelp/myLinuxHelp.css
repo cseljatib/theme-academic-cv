@@ -1,0 +1,144 @@
+/* Century Schoolbook font is very similar to Computer Modern Math: cmmi */
+.MATH    { font-family: "Century Schoolbook", serif; }
+.MATH I  { font-family: "Century Schoolbook", serif; font-style: italic }
+.BOLDMATH { font-family: "Century Schoolbook", serif; font-weight: bold }
+
+/* implement both fixed-size and relative sizes */
+SMALL.XTINY		{ font-size : xx-small }
+SMALL.TINY		{ font-size : x-small  }
+SMALL.SCRIPTSIZE	{ font-size : smaller  }
+SMALL.FOOTNOTESIZE	{ font-size : small    }
+SMALL.SMALL		{  }
+BIG.LARGE		{  }
+BIG.XLARGE		{ font-size : large    }
+BIG.XXLARGE		{ font-size : x-large  }
+BIG.HUGE		{ font-size : larger   }
+BIG.XHUGE		{ font-size : xx-large }
+
+/* heading styles */
+H1		{  }
+H2		{  }
+H3		{  }
+H4		{  }
+H5		{  }
+
+/* mathematics styles */
+DIV.displaymath		{ }	/* math displays */
+TD.eqno			{ }	/* equation-number cells */
+
+
+/* document-specific styles come next */
+DIV.logo-LaTeX		{   }
+PRE.preform		{   }
+DIV.flushright		{   }
+DIV.navigation		{   }
+DIV.LaTeX		{   }
+SPAN.textbf		{ font-weight: bold  }
+SPAN.arabic		{   }
+#hue1114		{ color: #ff0000;  }
+#hue1116		{ color: #ff0000;  }
+#hue1118		{ color: #ff0000;  }
+#hue1120		{ color: #ff0000;  }
+#hue1122		{ color: #ff0000;  }
+#hue1124		{ color: #ff0000;  }
+#hue1126		{ color: #ff0000;  }
+#hue1128		{ color: #ff0000;  }
+#hue1130		{ color: #ff0000;  }
+#hue1132		{ color: #ff0000;  }
+#hue1134		{ color: #ff0000;  }
+#hue1136		{ color: #ff0000;  }
+#hue1138		{ color: #ff0000;  }
+#hue332		{ color: #ff0000;  }
+#hue334		{ color: #ff0000;  }
+#hue336		{ color: #ff0000;  }
+#hue338		{ color: #ff0000;  }
+#hue340		{ color: #ff0000;  }
+#hue342		{ color: #ff0000;  }
+#hue344		{ color: #ff0000;  }
+#hue346		{ color: #ff0000;  }
+#hue348		{ color: #ff0000;  }
+#hue350		{ color: #ff0000;  }
+#hue352		{ color: #ff0000;  }
+#hue354		{ color: #ff0000;  }
+#hue356		{ color: #ff0000;  }
+#hue358		{ color: #ff0000;  }
+#hue360		{ color: #ff0000;  }
+#hue362		{ color: #ff0000;  }
+#hue364		{ color: #ff0000;  }
+#hue366		{ color: #ff0000;  }
+#hue368		{ color: #ff0000;  }
+#hue370		{ color: #ff0000;  }
+#hue372		{ color: #ff0000;  }
+#hue374		{ color: #ff0000;  }
+#hue376		{ color: #ff0000;  }
+#hue378		{ color: #ff0000;  }
+#hue380		{ color: #ff0000;  }
+#hue382		{ color: #ff0000;  }
+#hue384		{ color: #ff0000;  }
+#hue386		{ color: #ff0000;  }
+#hue388		{ color: #ff0000;  }
+#hue390		{ color: #ff0000;  }
+#hue392		{ color: #ff0000;  }
+#hue394		{ color: #ff0000;  }
+#hue396		{ color: #ff0000;  }
+#hue398		{ color: #ff0000;  }
+#hue400		{ color: #ff0000;  }
+#hue402		{ color: #ff0000;  }
+#hue404		{ color: #ff0000;  }
+#hue406		{ color: #ff0000;  }
+#hue408		{ color: #ff0000;  }
+#hue597		{ color: #ff0000;  }
+#hue599		{ color: #ff0000;  }
+#hue601		{ color: #ff0000;  }
+#hue603		{ color: #ff0000;  }
+#hue605		{ color: #ff0000;  }
+#hue695		{ color: #ff0000;  }
+#hue697		{ color: #ff0000;  }
+#hue699		{ color: #ff0000;  }
+#hue701		{ color: #ff0000;  }
+#hue703		{ color: #ff0000;  }
+#hue705		{ color: #ff0000;  }
+#hue707		{ color: #ff0000;  }
+#hue709		{ color: #ff0000;  }
+#hue711		{ color: #ff0000;  }
+#hue713		{ color: #ff0000;  }
+#hue715		{ color: #ff0000;  }
+#hue717		{ color: #ff0000;  }
+#hue719		{ color: #ff0000;  }
+#hue721		{ color: #ff0000;  }
+#hue723		{ color: #ff0000;  }
+#hue725		{ color: #ff0000;  }
+#hue727		{ color: #ff0000;  }
+#hue729		{ color: #ff0000;  }
+#hue731		{ color: #ff0000;  }
+#hue733		{ color: #ff0000;  }
+#hue735		{ color: #ff0000;  }
+#hue737		{ color: #ff0000;  }
+#hue739		{ color: #ff0000;  }
+#hue741		{ color: #ff0000;  }
+#hue743		{ color: #ff0000;  }
+#hue745		{ color: #ff0000;  }
+#hue747		{ color: #ff0000;  }
+#hue749		{ color: #ff0000;  }
+#hue751		{ color: #ff0000;  }
+#hue753		{ color: #ff0000;  }
+#hue755		{ color: #ff0000;  }
+#hue757		{ color: #ff0000;  }
+#hue952		{ color: #ff0000;  }
+#hue954		{ color: #ff0000;  }
+#hue956		{ color: #ff0000;  }
+#hue958		{ color: #ff0000;  }
+#hue960		{ color: #ff0000;  }
+#hue962		{ color: #ff0000;  }
+#hue964		{ color: #ff0000;  }
+#hue966		{ color: #ff0000;  }
+#hue968		{ color: #ff0000;  }
+#hue970		{ color: #ff0000;  }
+#hue972		{ color: #ff0000;  }
+#hue974		{ color: #ff0000;  }
+#hue976		{ color: #ff0000;  }
+#hue978		{ color: #ff0000;  }
+#hue980		{ color: #ff0000;  }
+#hue982		{ color: #ff0000;  }
+#hue984		{ color: #ff0000;  }
+#hue986		{ color: #ff0000;  }

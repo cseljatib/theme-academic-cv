@@ -1,0 +1,516 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R stuff</TITLE>
+<META NAME="description" CONTENT="R stuff">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="myLinuxHelp.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html152"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html148"
+  HREF="myLinuxHelp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html142"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html150"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html153"
+  HREF="node10.html">Edition stuff of .pdf</A>
+<B> Up:</B> <A NAME="tex2html149"
+  HREF="myLinuxHelp.html">My Linux (Ubuntu) help</A>
+<B> Previous:</B> <A NAME="tex2html143"
+  HREF="node8.html">L<SUP>A</SUP>TEX&nbsp;stuffs</A>
+ &nbsp; <B>  <A NAME="tex2html151"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00050000000000000000"></A> <A NAME="sec:ere"></A>
+<BR>
+R stuff
+</H1>
+R (<A
+ HREF="node16.html#r10">R Development Core Team, 2010</A>) is an 
+ open-source statistical environment,
+ and according to me the ``way to go''
+ for statistical computing
+ in natural resources and ecological
+ related problems.
+Indeed my opinion on the goodness of R is subjective, but
+ you could review some little-bit
+less subjective comments on <A
+ HREF="node16.html#salas08b">Salas (2008)</A>, if you
+wish.
+
+<P>
+
+<OL>
+<LI><SPAN  CLASS="textbf">installing R</SPAN><A NAME="tex2html9"
+  HREF="footnode.html#foot1092"><SUP><SPAN CLASS="arabic">2</SPAN></SUP></A>
+<BR>
+First include a mirror in the file /etc/apt/sources.list, as follows
+
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo gedit /etc/apt/sources.list}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="341" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo gedit /etc/apt/sources.list}
+}
+}">
+                        
+<BR>
+and in that file add 
+
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu gutsy/}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="599" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu gutsy/}
+}
+}">
+                        
+<BR>
+<P>
+then, before of updating this, type at the terminal the following
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf gpg - -keyserver subkeys.pgp.net - -recv-key E2A11821}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="538" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img79.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf gpg -keyserver subkeys.pgp.net -recv-key E2A11821}
+}
+}">
+                        
+<BR>
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf gpg -a - -export E2A11821 | sudo apt-key add -}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="495" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img80.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf gpg -a -export E2A11821 \vert sudo apt-key add -}
+}
+}">
+                        
+<BR>
+<P>
+now, we can do
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get update}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="233" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img81.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get update}
+}
+}">
+                        
+<BR>
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~g77}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="265" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img82.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;g77}
+}
+}">
+                        , and now to install R
+<BR>
+<P>
+at the terminal type
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~r-base r-base-core r-base-dev r-recommended}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="655" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img83.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;r-base r-base-core r-base-dev r-recommended}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">installing R packages from a ftp mirror</SPAN>
+<BR>
+First, I would recommend to install a Fortran compiler, as follows
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~gfortran*}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="319" HEIGHT="29" ALIGN="BOTTOM" BORDER="0"
+ SRC="img84.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;gfortran*}
+}
+}">
+                        .
+<BR>
+<P>
+Then, we need to star R or emacs, using <TT>sudo</TT>. At the
+terminal type
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo R}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img85.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo R}
+}
+}">
+                        , or call emacs in the terminal using sudo, as follows
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo emacs}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="150" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img86.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo emacs}
+}
+}">
+
+<P>
+then, we proceed to install the packages. For example
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf install.packages("nlme")}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="272" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img87.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf install.packages(''nlme'')}
+}
+}">
+                         
+<BR>
+or multiple
+packages 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf install.packages(c("plotrix", "Hmisc","xtable"))}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="496" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img88.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf install.packages(c(''plotrix'', ''Hmisc'',''xtable''))}
+}
+}">
+
+<P>
+You can also try the following when the above do not work
+(here using the <TT>Hmisc</TT> as example) but directly
+from the terminal (nor in R)
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install r-cran-Hmisc}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="355" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img89.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install r-cran-Hmisc}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Updating R packages</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf update.packages()}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="213" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img90.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf update.packages()}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">installing R packages from a local file</SPAN>
+To install packages for R under Linux/Unix, download a 
+.tar.gz file to /tmp, login is root, and run a command such as 
+follows
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf R CMD INSTALL /path monash\_1.0.1.tar.gz}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="469" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img91.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf R CMD INSTALL /path monash\_1.0.1.tar.gz}
+}
+}">
+
+<P>
+where ``/path'' represents the directory where
+the tar.gz file is, or better inclusive can be
+just save that file in any folder, and open a terminal in that
+folder, then ``path'' is not needed in the previous syntax.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">list of all currently installed R packages</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf rownames(installed.packages())}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="336" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img92.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf rownames(installed.packages())}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">list of all loaded R packages in a session</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf search()}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="119" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img93.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf search()}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to work in R within Emacs</SPAN>
+<BR>
+The only thing that we need, is to install <SPAN  CLASS="textbf">ESS</SPAN> in ubuntu, typing at
+the terminal
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~ess}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="259" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img94.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;ess}
+}
+}">
+                        
+<BR>
+then, just open an .R file in Emacs and all the R options will appear.
+
+<P>
+You can start an R session, without opening an .r file in Emacs, by opening Emacs, and
+then press <TT>M-x R</TT>
+
+<P>
+<PRE>
+You parse parts of an R source file by the following commands
+ess-eval-line (C-c C-j)
+ess-eval-line-and-go (C-c M-j)
+ess-eval-funtion (C-c C-f)
+ess-eval-function-and-go (C-c M-f)
+ess-eval-region (C-c C-r)
+ess-eval-region-and-go (C-c M-r)
+ess-eval-buffer (C-c C-b)
+ess-eval-buffer-and-go (C-c M-b)
+(all the commands start with C-c, you do an -and-go by using the metakey).
+</PRE>
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">install Rkward</SPAN>
+<BR>
+This is a nice GUI editor for R, the installation for ubuntu that worked
+ the best for me was to download the .deb file from the CRAN website.
+
+<P>
+</LI>
+</OL>
+
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html152"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html148"
+  HREF="myLinuxHelp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html142"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html150"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html153"
+  HREF="node10.html">Edition stuff of .pdf</A>
+<B> Up:</B> <A NAME="tex2html149"
+  HREF="myLinuxHelp.html">My Linux (Ubuntu) help</A>
+<B> Previous:</B> <A NAME="tex2html143"
+  HREF="node8.html">L<SUP>A</SUP>TEX&nbsp;stuffs</A>
+ &nbsp; <B>  <A NAME="tex2html151"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

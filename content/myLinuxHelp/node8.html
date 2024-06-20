@@ -1,0 +1,800 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>LATEX&nbsp;stuffs</TITLE>
+<META NAME="description" CONTENT="LATEX&nbsp;stuffs">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="myLinuxHelp.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html140"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html136"
+  HREF="myLinuxHelp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html130"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html138"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html141"
+  HREF="node9.html">R stuff</A>
+<B> Up:</B> <A NAME="tex2html137"
+  HREF="myLinuxHelp.html">My Linux (Ubuntu) help</A>
+<B> Previous:</B> <A NAME="tex2html131"
+  HREF="node7.html">How to install/uninstall a</A>
+ &nbsp; <B>  <A NAME="tex2html139"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00040000000000000000"></A> <A NAME="sec:latex"></A>
+<BR>
+<SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>&nbsp;stuffs
+</H1>
+
+<OL>
+<LI><SPAN  CLASS="textbf">How to install <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN></SPAN><A NAME="tex2html8"
+  HREF="footnode.html#foot738"><SUP><SPAN CLASS="arabic">1</SPAN></SUP></A>
+<BR><SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>can be installed in various ways, here the ones that I have tried
+with success
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~texlive texlive-base texlive-base-bin texlive-common}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="720" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img45.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;texlive texlive-base texlive-base-bin texlive-common}
+}
+}">
+                         
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~texlive-latex-base texlive-latex-extra texlive-math-extra}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="754" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img46.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;texlive-latex-base texlive-latex-extra texlive-math-extra}
+}
+}">
+                        
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~texlive-pstricks texlive-science}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="515" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img47.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;texlive-pstricks texlive-science}
+}
+}">
+                        
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~texlive-extra-utils}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="398" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;texlive-extra-utils}
+}
+}">
+                          (will install <TT>epstopdf</TT> too)
+
+<P>
+and then install some dvi viewers
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~xgdvi}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="284" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;xgdvi}
+}
+}">
+                        . 
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~xpdf}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="275" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;xpdf}
+}
+}">
+                        .
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to compile <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>&nbsp;files from the terminal</SPAN>
+<BR><SPAN  CLASS="textbf">i.if having pdf figures</SPAN>: 
+You can produce pdf's directly using pdflatex, as follows
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf pdflatex FILENAME.tex}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="279" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf pdflatex FILENAME.tex}
+}
+}">
+
+<P>
+Notice however, that pdflatex doesn't work with <TT>eps</TT> figures, 
+You will have to convert all eps figures to pdfs using the 
+command <TT>epstopdf</TT>. 
+However, pdflatex will work with png's and jpg's which is really nice.
+
+<P>
+<SPAN  CLASS="textbf">ii.if having eps figures</SPAN>: 
+Here we have to compile the file in steps
+
+<OL>
+<LI><SPAN  CLASS="textbf">eps to dvi</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf latex FILENAME.tex}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="248" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img52.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf latex FILENAME.tex}
+}
+}">
+                        
+or just 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf latex FILENAME}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="213" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf latex FILENAME}
+}
+}">
+                        
+<BR>
+this will produce a .dvi file, i.e. FILENAME.dvi
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">dvi to ps</SPAN>
+<BR>
+To produce a .ps file from the .dvi file, type
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf dvips FILENAME.dvi}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="252" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img54.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf dvips FILENAME.dvi}
+}
+}">
+
+<P>
+Notice that dvips mean dvi-<SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$ &gt;$"></SPAN>ps.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">ps to pdf</SPAN>
+<BR>
+To produce a .pdf file from the .dvi file, type
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf dvipdf FILENAME.dvi}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="263" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf dvipdf FILENAME.dvi}
+}
+}">
+</LI>
+</OL>
+
+<P>
+This syntax seems to be good when having .eps figures. Notice also
+that we can easily transform each .eps figure to pdf using
+<TT>epstopdf FILENAME.eps</TT>.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to count the number of words in a .TeX file</SPAN>
+<BR>
+This is kind of pain, and is hard to count exactly the number of words 
+from a .tex file, but here is what I know (without having to install
+other fancy software). 
+First, we have to install <TT>untex</TT> as follows
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~untex}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="285" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img57.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;untex}
+}
+}">
+                        
+<BR>
+then at the terminal type
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf untex FILENAME.tex $>$\  target \&\& wc -w target}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="506" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf untex FILENAME.tex $&gt;$ target \&amp;\&amp; wc -w target}
+}
+}">
+                        
+<BR>
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to count the number of words in a .pdf file</SPAN>
+<BR>
+This might be a solution to the problem mentioned above. 
+ According to my experience, this works better sometimes. 
+First, we have to install <TT>pdftext</TT> as follows
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~pdftext}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="301" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;pdftext}
+}
+}">
+                        
+<BR>
+then at the terminal type
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf pdftext FILENAME.pdf output.txt}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="377" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf pdftext FILENAME.pdf output.txt}
+}
+}">
+                        
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf wc output.txt}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="173" HEIGHT="27" ALIGN="BOTTOM" BORDER="0"
+ SRC="img61.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf wc output.txt}
+}
+}">
+                        
+<BR>
+<P>
+or just
+
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf pdftext FILENAME.pdf -l wc - w}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="362" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img62.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf pdftext FILENAME.pdf -l wc - w}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to use <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>&nbsp;within Emacs</SPAN>
+<BR>
+First, we need to install <SPAN  CLASS="textbf">Emacs</SPAN>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~emacs}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="289" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img63.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;emacs}
+}
+}">
+                        
+<BR>
+<P>
+Notice, that 
+some futures about the appearance of Emacs can be modified using
+the definition file of Emacs. This file is currently located
+in <TT>/home/christian/</TT>. I cannot see it, when using <TT>ls</TT>, but
+you can edit it, using <TT>sudo gedit .emacs</TT> or
+editing with Emacs <TT>sudo emacs .emacs</TT>.
+
+<P>
+and then, to install <TT>auctex</TT> (needed to compile LaTeX in Emacs)
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~auctex}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="294" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img64.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;auctex}
+}
+}">
+
+<P>
+then, we can just open a .tex file within Emacs, typing at the terminal 
+<TT>emacs FILENAME.tex</TT>, and the <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>&nbsp;options will appear.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to use <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>&nbsp;within Gedit (the Gnome editor)</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~lmodern}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="310" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img65.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;lmodern}
+}
+}">
+                        
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~rubber}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="296" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img66.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;rubber}
+}
+}">
+                        
+<BR>
+<P>
+then go to Gedit, in add-onn select <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>, and ready to go!
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to install LaTeX Style Files (.sty)</SPAN>
+<BR>
+At the terminal type:
+
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf cd /usr/share/texmf-texlive/tex/latex}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="403" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf cd /usr/share/texmf-texlive/tex/latex}
+}
+}">
+
+<P>
+To install a style file ``STYFILE'' you have to do as follows
+<BR>
+1. create a directory named ``STYFILE'' on /usr/share/texmf-texlive/tex/latex
+<BR>
+2. copy the file <TT>STYFILE.sty</TT> and the file <TT>STYFILE.tex</TT> 
+to the directory /usr/share/texmf-texlive/tex/latex/STYFILE
+<BR>
+3. run at the terminal 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo mktexlsr}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="176" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img68.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo mktexlsr}
+}
+}">
+                        
+<BR>
+when installing style files for Beamer (slides presentation with <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>), 
+do the same
+as follows
+<BR>
+1. copy the file <TT>STYFILE.sty</TT> 
+to the directory /usr/share/texmf/tex/latex/beamer/themes/theme/
+<BR>
+3. run at the terminal 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo mktexlsr}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="176" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img68.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo mktexlsr}
+}
+}">
+
+<P>
+Notice that the .sty and .tex files should be able to open by any user, and not
+only by the root, then the properties of them must be checked.
+
+<P>
+If the package came as .dtx and .ins files, first do
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf latex FILENAME.dtx }
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="257" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img69.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf latex FILENAME.dtx }
+}
+}">
+                        
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf latex FILENAME.ins}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="245" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img70.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf latex FILENAME.ins}
+}
+}">
+
+<P>
+and then take the produced .sty file, and proceed as before.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Paper size</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo gedit /etc/papersize}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="285" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img71.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo gedit /etc/papersize}
+}
+}">
+                        
+<BR>
+and in that file put ``letter'', that is.
+
+<P>
+Also, one can type at the terminal
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo texconfig}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="179" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img72.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo texconfig}
+}
+}">
+                        , and select the paper size there
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to install Beamer</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~latex-beamer}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="355" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img73.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;latex-beamer}
+}
+}">
+                        
+<BR>
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to install <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>2html</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~latex2html}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="333" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img74.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;latex2html}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How to install MetaPost</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~texlive-metapost}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="388" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img75.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;texlive-metapost}
+}
+}">
+                         (will install MetaPost)
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~context}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="302" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img76.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;context}
+}
+}">
+                         (is needed for using <TT>mptopdf</TT> in MetaPost)
+<BR>
+<P>
+</LI>
+</OL>
+
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html140"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html136"
+  HREF="myLinuxHelp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html130"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html138"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html141"
+  HREF="node9.html">R stuff</A>
+<B> Up:</B> <A NAME="tex2html137"
+  HREF="myLinuxHelp.html">My Linux (Ubuntu) help</A>
+<B> Previous:</B> <A NAME="tex2html131"
+  HREF="node7.html">How to install/uninstall a</A>
+ &nbsp; <B>  <A NAME="tex2html139"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,54 @@
+#showing the LS method in a graph
+#christian.salas.eljatib
+#
+# ojo que no me funciona lo de setear el dirctoriode salidad de los archivos web
+#  en terminos que lo "verbose" no aparece, asi es que igual
+#  voy a buscar los archivos al q R determina por default
+library(animation)
+#library(MASS)
+
+#oopt <- ani.options(interval = 0.3,
+#               outdir = getwd()) #,
+#                    verbose=TRUE)
+
+
+#parameters value of the model
+b0 <- 1; b1 <- 2
+x <- seq(1,14)
+#x
+
+#set the seed for random generation numbers
+set.seed(1)
+y <- b0 + b1*x +  rnorm(length(x),sd=3)
+#set.seed(1)
+#y2 <- b0 + b1*x +  rnorm(length(x),sd=3)
+plot(y~x)
+#plot(y2~y)
+abline(lm(y~x))
+
+b.range=range((seq(0.1,5,by=0.1)))
+b.range
+mod <- lm(y~x)
+coef(mod)
+b0.hat <- coef(mod)[1]
+b0.hat
+#ojo q el b0.hat no es exactamente el b0, por eso q no calza 100% las rectas
+# de la regresion y la linea ajustada al varias b1.hat pues esa linea ajustada
+# usa como b0.hat a b0
+
+saveHTML({
+#    ani.options(interval = 0.3)
+#    ani.options(verbose = TRUE)    
+#    ani.options(outdir = getwd())
+    par(mar = c(4, 4, 0.5, 0.1), mgp = c(2, 0.5, 0), tcl = -0.3)
+    ## slope changing
+    least.squares(y=y,x=x,ani.type="slope",a=b0.hat,b.range=b.range,
+#                  main="Datos y rectas ",
+                  las=1)
+}, img.name = "minCuadrados", htmlfile = "minCuadrados.html", 
+    ani.height = 450, ani.width = 600,
+    title = "Minimos cuadrados", 
+    description = c('Buscamos un estimador de la pendiente de un modelo lineal simple de la forma y=1+bx, probamos 50 posibles valores de b, y calculamos
+ la suma de cuadrados del error (lo que llamamos en clases "RSS") del modelo para cada uno de esos valores de b.'))
+
+#ani.options(oopt)

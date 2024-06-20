@@ -1,0 +1,449 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Features of the computer</TITLE>
+<META NAME="description" CONTENT="Features of the computer">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html106"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html102"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html96"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html104"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html107"
+  HREF="node6.html">Compressing/uncompressing files</A>
+<B> Up:</B> <A NAME="tex2html103"
+  HREF="node2.html">Miscellaneous management of files</A>
+<B> Previous:</B> <A NAME="tex2html97"
+  HREF="node4.html">Searching, features of files,</A>
+ &nbsp; <B>  <A NAME="tex2html105"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00023000000000000000">
+Features of the computer</A>
+</H2>
+
+<OL>
+<LI><SPAN  CLASS="textbf">Model</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo dmidecode -s system-manufacturer}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="421" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo dmidecode -s system-manufacturer}
+}
+}">
+
+<P>
+will give me: 
+``LENOVO'' 
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo dmidecode -s system-product-name}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="427" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo dmidecode -s system-product-name}
+}
+}">
+
+<P>
+will give me: ``1953DDU''
+<BR>
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo dmidecode -s system-version}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="362" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo dmidecode -s system-version}
+}
+}">
+
+<P>
+will give me: ``ThinkPad T60''
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Which version of Ubuntu am I using?</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf cat /etc/issue}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="173" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf cat /etc/issue}
+}
+}">
+                         or better 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf cat /etc/lsb-release}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="225" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf cat /etc/lsb-release}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">IP address</SPAN>
+<BR>
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf ifconfig -a}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="136" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf ifconfig -a}
+}
+}">
+
+<P>
+will give several details, 
+ but the IP address is under
+ ``inet addr''. 
+<P>
+Notice that you could also use the following 
+ website to automatically find your IP:
+<BR><TT><A NAME="tex2html7"
+  HREF="http://whatismyipaddress.com/">http://whatismyipaddress.com/</A></TT>
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Memory, partitions, etc </SPAN>
+<BR>
+<P>
+With 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf cat /etc/fstab}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="174" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf cat /etc/fstab}
+}
+}">
+                         we can see all details about the
+partitions. 
+<P>
+With 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf free}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img25.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf free}
+}
+}">
+                         we can see the memory use, as follows:
+<PRE>
+             total       used       free     shared    buffers     cached
+Mem:       1546484    1329288     217196          0      19204     803812
+-/+ buffers/cache:     506272    1040212
+Swap:       995988      34760     961228
+</PRE>
+The first line indicates that, out of 1.5GB of RAM, 1.3GB is ``in use''. 
+The next 
+line shows us that while 1.3GB is being used, only 500MB of this is actually 
+being used by applications; the rest is being used for buffers and cache.
+The most important part of this listing for assessing performance is the
+ Swap line; this shows us that we are currently using some swap. 
+The system is able to fit everything 
+into physical memory without having to resort (too much) 
+to slow, disk-based swap space.
+
+<P>
+The following two syntax give also some information on memory
+and partitions
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo fdisk -l /dev/sda}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="251" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo fdisk -l /dev/sda}
+}
+}">
+                        
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo parted /dev/sda print}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="301" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img27.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo parted /dev/sda print}
+}
+}">
+
+<P>
+<B>To force a disk check on next reboot</B>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo touch /forcefsck \&\& sudo reboot}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="404" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img28.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo touch /forcefsck \&amp;\&amp; sudo reboot}
+}
+}">
+
+<P>
+<B>To check badblocks</B>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo badblocks -n -s -v -c 10240 /dev/sda2}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="449" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img29.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo badblocks -n -s -v -c 10240 /dev/sda2}
+}
+}">
+                         [where <TT>sda2</TT> represents
+the partition where  ubuntu is installed]
+<BR>
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo e2fsck -cc /dev/sda2}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="287" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img30.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo e2fsck -cc /dev/sda2}
+}
+}">
+                          [where <TT>sda2</TT> represents
+the partition where  ubuntu is installed]
+<BR>
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Sound</SPAN>
+<BR>
+<P>
+type 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf alsamixer}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="133" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img31.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf alsamixer}
+}
+}">
+                        , if you get a windows with levels
+to move, then is working ok.
+
+<P>
+Install later 
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo aptitude install gnome-alsamixer}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="402" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo aptitude install gnome-alsamixer}
+}
+}">
+                         
+<BR>
+this will be installed in ``Applications/sound-video''.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">How do I know what graphic card I have installed?</SPAN>
+<BR>
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf lspci $|$\  grep VGA}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="203" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf lspci $\vert$ grep VGA}
+}
+}">
+                         
+<P>
+</LI>
+</OL>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html106"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html102"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html96"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html104"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html107"
+  HREF="node6.html">Compressing/uncompressing files</A>
+<B> Up:</B> <A NAME="tex2html103"
+  HREF="node2.html">Miscellaneous management of files</A>
+<B> Previous:</B> <A NAME="tex2html97"
+  HREF="node4.html">Searching, features of files,</A>
+ &nbsp; <B>  <A NAME="tex2html105"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

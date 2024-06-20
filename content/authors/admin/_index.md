@@ -59,7 +59,7 @@ title: Christian Salas-Eljatib
 ---
 
 
-I am a Full Professor of Forest Biometrics and Modelling at the [Department of Forest Management and the Environment](https://forestal.uchile.cl/facultad/departamentos/gestion-forestal-y-su-medio-ambiente) of the [Faculty of Forest Science and Nature Conservation](https://forestal.uchile.cl) at the [Universidad de Chile](https://uchile.cl/), in Santiago, Chile. My research interests include biometrics, applied statistics and ecological modelling. I lead the [Laboratory of Forest Biometrics and Modelling](https://biometriaforestal.uchile.cl), where we develop mathematical and statistical models for forecasting forest ecosystem features, study tree allometry, and assessing sampling strategies.
+I am a Professor of Forest Biometrics and Modelling at the [Department of Forest Management and the Environment](https://forestal.uchile.cl/facultad/departamentos/gestion-forestal-y-su-medio-ambiente) of the [Faculty of Forest Science and Nature Conservation](https://forestal.uchile.cl) at the [Universidad de Chile](https://uchile.cl/), in Santiago, Chile. My research interests include biometrics, applied statistics and ecological modelling. I lead the [Laboratory of Forest Biometrics and Modelling](https://biometriaforestal.uchile.cl), where we develop mathematical and statistical models for forecasting forest ecosystem features, study tree allometry, and assessing sampling strategies.
 
 
 <!--- 

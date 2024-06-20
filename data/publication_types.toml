@@ -1,0 +1,16 @@
+# Publication types.
+# Each item in the list corresponds to an item in the language packs.
+# lo modifique el 22 de febrero del 2023, ojo que esto debe
+# tener sus mismas definiciones en el archivo "en.yaml" ubicado en el
+# path "./wowchemy-hugo-themes/modules/wowchemy/i18n/en.yaml"
+types = [ "pub_uncat",
+          "pub_conf",
+          "pub_journal",
+          "pub_preprint",
+          "pub_report",
+          "pub_book",
+          "pub_book_section",
+          "pub_thesis",
+          "pub_patent",
+          "pub_misc"
+        ]

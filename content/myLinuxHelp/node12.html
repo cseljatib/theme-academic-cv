@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>To convert among pictures file extension</TITLE>
+<META NAME="description" CONTENT="To convert among pictures file extension">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="node10.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html191"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html187"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html181"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html189"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html192"
+  HREF="node13.html">How to delete strange</A>
+<B> Up:</B> <A NAME="tex2html188"
+  HREF="node10.html">Edition stuff of .pdf</A>
+<B> Previous:</B> <A NAME="tex2html182"
+  HREF="node11.html">Editing .pdf files</A>
+ &nbsp; <B>  <A NAME="tex2html190"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00062000000000000000">
+To convert among pictures file extension</A>
+</H2>
+first install 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~imagemagick}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="353" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img99.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;imagemagick}
+}
+}">
+
+<P>
+
+<OL>
+<LI><SPAN  CLASS="textbf">from jpg to eps</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf convert fig.jpg eps2:fig.eps}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="291" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img100.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf convert fig.jpg eps2:fig.eps}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">from png to eps</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf convert fig.png eps3:fig.eps}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="297" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img101.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf convert fig.png eps3:fig.eps}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">from jpeg to png</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf convert fig.jpeg fig.png}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="259" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img102.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf convert fig.jpeg fig.png}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">from pdf to eps</SPAN> (strange but true!!)
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf gs -dNOPAUSE -dNOCACHE -dBATCH -sDEVICE=epswrite -sOutputFile=FileNameYouWant.eps FileNameOriFigure.pdf}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="1219" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img103.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf gs -dNOPAUSE -dNOCACHE -dBATCH -sDEVICE=epswrite -sOutputFile=FileNameYouWant.eps FileNameOriFigure.pdf}
+}
+}">
+                        
+<BR>
+<P>
+do not use the same name for the eps file that you will create and the original pdf file
+</LI>
+</OL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Editing .pdf files</TITLE>
+<META NAME="description" CONTENT="Editing .pdf files">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node10.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html179"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html175"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html169"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html177"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html180"
+  HREF="node12.html">To convert among pictures</A>
+<B> Up:</B> <A NAME="tex2html176"
+  HREF="node10.html">Edition stuff of .pdf</A>
+<B> Previous:</B> <A NAME="tex2html170"
+  HREF="node10.html">Edition stuff of .pdf</A>
+ &nbsp; <B>  <A NAME="tex2html178"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00061000000000000000">
+Editing .pdf files</A>
+</H2>
+We need first to install the package <TT>pdftk</TT>. 
+To install <TT>pdftk</TT> 
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~pdftk}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="283" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img95.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;pdftk}
+}
+}">
+
+<P>
+The nice thing is that one can use it all from the commandline, therefore
+we do not need to install Adobe for linux or things like that.
+
+<OL>
+<LI><SPAN  CLASS="textbf">Merge Two or More PDFs into a New Document</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf pdftk 1.pdf 2.pdf 3.pdf cat output 123.pdf}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="441" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img96.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf pdftk 1.pdf 2.pdf 3.pdf cat output 123.pdf}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Split Select Pages from Multiple PDFs into a New Document</SPAN>
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf pdftk A=one.pdf B=two.pdf cat A1-7 B1-5 A8 output combined.pdf}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="690" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img97.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf pdftk A=one.pdf B=two.pdf cat A1-7 B1-5 A8 output combined.pdf}
+}
+}">
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textbf">Burst a Single PDF Document into Single Pages and Report its
+ Data to doc_data.txt</SPAN> 
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf pdftk mydoc.pdf burst.}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="275" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img98.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf pdftk mydoc.pdf burst.}
+}
+}">
+
+<P>
+</LI>
+</OL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

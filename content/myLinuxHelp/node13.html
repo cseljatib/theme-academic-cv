@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>How to delete strange characters present in some files</TITLE>
+<META NAME="description" CONTENT="How to delete strange characters present in some files">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="previous" HREF="node12.html">
+<LINK REL="up" HREF="node10.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html201"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html197"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html193"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html199"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html202"
+  HREF="node14.html">Editing/Copying DVD and CD</A>
+<B> Up:</B> <A NAME="tex2html198"
+  HREF="node10.html">Edition stuff of .pdf</A>
+<B> Previous:</B> <A NAME="tex2html194"
+  HREF="node12.html">To convert among pictures</A>
+ &nbsp; <B>  <A NAME="tex2html200"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00063000000000000000">
+How to delete strange characters present in some files</A>
+</H2>
+What we need first? 
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~tofrodos}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="309" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img104.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;tofrodos}
+}
+}">
+
+<P>
+An example: you edit a .tex file with the text editor, and save the changes. Then
+if you open the same file in Emacs is going to appear ``<code>^</code>M'' at the end
+of every line. This does not affect to the file, but is not nice to the eye.
+Instead of deleting this ``<code>^</code>M'' by hand or using the method explained in this link
+(http://www.usc.edu/its/doc/statistics/help/multiuse/garbage.html), you
+can proceed as follows: 
+First make a copy of the file with the problem (i.e. having ``<code>^</code>M''),
+let say the file is <TT>badfile1.tex</TT> and make a copy called
+<TT>badfile2.tex</TT>, then type the following at the terminal
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf dos2unix  badfile1.tex  >  anyname.tex}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="385" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img105.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf dos2unix badfile1.tex &gt; anyname.tex}
+}
+}">
+                        
+then in <TT>badfile1.tex</TT> is going to appear the fixed file, which
+you can save as <TT>goodfile.tex</TT> or whatever. The <TT>anyname.tex</TT>
+is empty, and can be deleted.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html201"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html197"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html193"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html199"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html202"
+  HREF="node14.html">Editing/Copying DVD and CD</A>
+<B> Up:</B> <A NAME="tex2html198"
+  HREF="node10.html">Edition stuff of .pdf</A>
+<B> Previous:</B> <A NAME="tex2html194"
+  HREF="node12.html">To convert among pictures</A>
+ &nbsp; <B>  <A NAME="tex2html200"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

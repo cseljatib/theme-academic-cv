@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Running Windows XP within Ubuntu</TITLE>
+<META NAME="description" CONTENT="Running Windows XP within Ubuntu">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="next" HREF="node16.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="up" HREF="myLinuxHelp.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html225"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html221"
+  HREF="myLinuxHelp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html215"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html223"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html226"
+  HREF="node16.html">Bibliography</A>
+<B> Up:</B> <A NAME="tex2html222"
+  HREF="myLinuxHelp.html">My Linux (Ubuntu) help</A>
+<B> Previous:</B> <A NAME="tex2html216"
+  HREF="node14.html">Editing/Copying DVD and CD</A>
+ &nbsp; <B>  <A NAME="tex2html224"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00080000000000000000">
+Running Windows XP within Ubuntu</A>
+</H1>
+<SPAN  CLASS="textbf">Core setting</SPAN>
+<BR>
+<P>
+Several options for doing this, but I use VirtualBox,
+which you can install it for free. 
+
+<P>
+You have a virtual machine (VM) with the
+  name ``winXPinUbuntu''
+<BR>
+You have a folder in your homedir (let's say /home/christian/) called ``myVirtualMachine''
+<BR>
+<P>
+<SPAN  CLASS="textbf">i. Install Guess additions</SPAN>
+<BR>
+Open VirtualBox, go to menu, devices, install guess additions. This
+will help to share the mouse between ubuntu and the VM without pressing
+the ``hot'' key of the VM.
+<BR>
+<BR>
+
+<P>
+<SPAN  CLASS="textbf">ii. Sharing folders between the virtual machine (winXP) and ubuntu</SPAN>
+<BR><I>a</I>. Power off the VM (make sure the VM is properly 
+shut down, powered off, do not save the machine state,
+o bien file and then exit in VirtualBox), go to shared folders, and select the folder in ubuntu
+ to be shared, in my case select
+<TT>/home/christian/myVirtualMachine</TT>
+
+<P>
+<I>b</I>. open the VM, and in the explorer of windows go to
+``add network place'' wizard and select the shared folder, and select
+a letter for that unit. 
+I used recently ``J'' instead of ``M'', also the spaces are 
+very important). You will
+ now see the shared folder as a network drive under My Computers.
+Later, you are being able to copy from-and to Ubuntu-WinXP trough these
+folders.
+
+<P>
+<BR>
+<BR>
+<SPAN  CLASS="textbf">iii. Add an icon for running the VM</SPAN>
+<BR>
+right-click in Applications menu of ubuntu, then add a new item (i did it under
+the ``System Tools'' sub-menu) with the following command:
+ <TT>VBoxManage startvm "winXPinUbuntu"</TT>. I have in the folder
+<TT>/home/christian/myPCdefStuff/ToSetMyUbuntu/myIconos/virtualBoxIcon</TT>
+ a file <TT>windows_flag.png</TT> that can be used as an icon for a Windows
+ VM.
+
+<P>
+Now, you are all set for running WinXP without
+ the need of login out from ubuntu, not bad!.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html225"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html221"
+  HREF="myLinuxHelp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html215"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html223"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html226"
+  HREF="node16.html">Bibliography</A>
+<B> Up:</B> <A NAME="tex2html222"
+  HREF="myLinuxHelp.html">My Linux (Ubuntu) help</A>
+<B> Previous:</B> <A NAME="tex2html216"
+  HREF="node14.html">Editing/Copying DVD and CD</A>
+ &nbsp; <B>  <A NAME="tex2html224"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

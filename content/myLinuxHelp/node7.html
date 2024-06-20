@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>How to install/uninstall a program?</TITLE>
+<META NAME="description" CONTENT="How to install/uninstall a program?">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="myLinuxHelp.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html128"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html124"
+  HREF="myLinuxHelp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html118"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html126"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html129"
+  HREF="node8.html">L<SUP>A</SUP>TEX&nbsp;stuffs</A>
+<B> Up:</B> <A NAME="tex2html125"
+  HREF="myLinuxHelp.html">My Linux (Ubuntu) help</A>
+<B> Previous:</B> <A NAME="tex2html119"
+  HREF="node6.html">Compressing/uncompressing files</A>
+ &nbsp; <B>  <A NAME="tex2html127"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00030000000000000000">
+How to install/uninstall a program?</A>
+</H1>
+A program is installed using
+
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo apt-get install~PROGRAMNAME}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="415" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img41.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo apt-get install&nbsp;PROGRAMNAME}
+}
+}">
+                         
+<BR>
+and uninstalled with
+
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf apt-get remove PROGRAMNAME}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="375" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img42.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf apt-get remove PROGRAMNAME}
+}
+}">
+                        . 
+<BR>
+For example, to uninstall 
+<TT>emacs</TT>
+
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf apt-get remove emacs21}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="270" HEIGHT="27" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf apt-get remove emacs21}
+}
+}">
+
+<P>
+To uninstall programs installed through unzipping .deb packages, 
+for example the program 
+<TT>tovid</TT>, use the followyng syntax 
+
+<P>
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo aptitude remove - -purge tovid}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="373" HEIGHT="28" ALIGN="BOTTOM" BORDER="0"
+ SRC="img44.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo aptitude remove -purge tovid}
+}
+}">
+                        
+
+<P>
+<BR><HR>
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>

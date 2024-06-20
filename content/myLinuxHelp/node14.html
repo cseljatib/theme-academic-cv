@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Editing/Copying DVD and CD</TITLE>
+<META NAME="description" CONTENT="Editing/Copying DVD and CD">
+<META NAME="keywords" CONTENT="myLinuxHelp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="myLinuxHelp.css">
+
+<LINK REL="next" HREF="node15.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="myLinuxHelp.html">
+<LINK REL="next" HREF="node15.html">
+</HEAD>
+
+<BODY BGCOLOR="WHITE" #color de fondo #BLACK,WHITE
+	TEXT="BLACK" #color de la letra #YELLOW,WHITE,BLACK
+	LINK="BLUE" #color de los links #BLUE
+	ALINK="BLUE" #color del link ???#BLUE
+	VLINK="BLUE">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html213"
+  HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html209"
+  HREF="myLinuxHelp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html203"
+  HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html211"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html214"
+  HREF="node15.html">Running Windows XP within</A>
+<B> Up:</B> <A NAME="tex2html210"
+  HREF="myLinuxHelp.html">My Linux (Ubuntu) help</A>
+<B> Previous:</B> <A NAME="tex2html204"
+  HREF="node13.html">How to delete strange</A>
+ &nbsp; <B>  <A NAME="tex2html212"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00070000000000000000">
+Editing/Copying DVD and CD</A>
+</H1>
+I used the program k3b for creating DVDs.
+
+<P>
+<SPAN  CLASS="textbf">Erasing DVDs</SPAN>
+when the option for erasing DVDs in <TT>k3b</TT> does not work, we 
+can use the following syntax at the terminal
+
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo dvd+rw-format -force /dev/dvd}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="397" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img106.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo dvd+rw-format -force /dev/dvd}
+}
+}">
+                        
+or also 
+<BR>
+<!-- MATH
+ $\framebox{
+\texttt{
+            \textcolor{red}{\bf sudo dvd+rw-format -blank /dev/dvd}
+                   }
+                  }$
+ -->
+<IMG
+ WIDTH="403" HEIGHT="30" ALIGN="BOTTOM" BORDER="0"
+ SRC="img107.png"
+ ALT="\framebox{
+\texttt{
+\textcolor{red}{\bf sudo dvd+rw-format -blank /dev/dvd}
+}
+}">
+                        . The later did
+not work for me once.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Webmaster: Christian E. Salas Eljatib, E-mail: christian.salas@yale.edu
+</ADDRESS>
+</BODY>
+</HTML>
